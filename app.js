@@ -45,7 +45,7 @@ function buscarTempLoc(lat,lon){
 
 function pegarCidade(nomeCidade){
     
-    mudarIcon.src = `/assets/assets/assets/loading-icon.svg`
+    mudarIcon.src = `assets/assets/assets/loading-icon.svg`
 
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nomeCidade}&units=metric&lang=pt_br&appid=${apikey}`)
@@ -65,7 +65,7 @@ function exibirClima(data){
     
     dataAtual.textContent = formartarData(dt);
     nomeCidade.textContent = name;
-    mudarIcon.src = `/assets/assets/assets/${icon}.svg`
+    mudarIcon.src = `assets/assets/assets/${icon}.svg`
     mudarDescricao.textContent = description;
     mudarTemperatura.textContent =`${Math.round(temp)} ºC`;
     mudarVento.textContent =`${Math.round(speed * 3.6)} Km`;
