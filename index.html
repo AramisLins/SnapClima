@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Snap Clima</title>
+</head>
+<body>
+    <header class= "cabecalho">
+        <div class="cidade-e-pesq">
+            <input class="pesq" id= "pesq-cidade"type="text" placeholder="Temperatura de qual cidade ?">
+            <button class="botao-pesq" id="botao-cidade"><img class="img-botao" src="./assets/assets/assets/search-icon.svg" alt="Icone de uma lupa"></button>
+        </div>
+
+        <div class="data" id="dataAtual">...</div>
+        <div class="nome-cidade" id="nomecidade">...</div>
+
+    </header>  
+
+    <section class="temperatura-atual">
+        <img classs="icon-temp" id="mudar-ico" src="./assets/assets/assets/loading-icon.svg" aria-hidden="true" alt="ilustra temperatura atual">
+        <div class="descricao" id="mudar-descri">...</div>
+        <div class="info-tempo">Tempo Agora</div>
+        <div class="temperatura"id="mudar-temp">...</div>
+    </section>
+
+    <div class="container">
+        <section class="detalhes-tempo">
+            <div class="itens-tempo">
+                <div class="etiqueta">Vento</div>
+                <div class="valor" id="mudar-vento">...</div>
+            </div>
+            <div class="itens-tempo">
+                <div class="etiqueta">Sensação</div>
+                <div class="valor" id="mudar-sensacao">...</div>
+            </div>
+            <div class="itens-tempo">
+                <div class="etiqueta">Umidade</div>
+                <div class="valor"id="mudar-umidade">...</div>
+            </div>
+        </section>
+
+        <section class="nascer-por-sol">
+                <div class="item-sol">
+                    <img class="icon-sol" src="/assets/assets/assets/sunrise.svg" alt="nascer do Sol">
+                    <div class="valor-sol" id="mudar-nascer">...</div>
+                </div>
+                <div class="item-sol">
+                    <img class="icon-sol" src="/assets/assets/assets/sunset.svg" alt="Por do Sol">
+                    <div class="valor-sol" id="mudar-por">...</div>
+                </div>
+           
+        </section>
+
+    </div>
+
+   
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
